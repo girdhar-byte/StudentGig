@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1f4e79;
+  --color-primary-dark: #163a5a;
+  
+  --shadow-glass: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+@utility glass {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@utility glass-card {
+  @apply glass rounded-2xl;
+}
